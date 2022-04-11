@@ -1,0 +1,87 @@
+body{
+    background-image:url("../img/flo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.titulo{
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+    background: #fff;
+    width:190px;
+    margin-top: 100px;
+    margin: 70px 39rem 100px;
+    padding:20px;
+    border:1px solid #fff;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 90px;
+  }
+
+
+  
+  .btn {
+    margin: 0 49rem 0 ;
+    display: block;
+    height: 77px;
+    width: 300px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #000;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid #d7b7bc;
+    margin-bottom: 40px;
+    z-index: 0;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .btn::before {
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #d7b7bc;
+    transition: all 500ms ease;
+    z-index: -1;
+  }
+  
+  .btn--3:hover {
+    animation: shadow-pulse 1000ms 1;
+    background-color: #d7b7bc;
+    color: #000;
+  }
+  
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgb(215,183,188);
+    }
+    100% {
+      box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0);
+    }
+  }
+
+ @media  screen and (max-width: 768px) {
+   body{
+      width:100%;
+   }
+   .titulo{
+     width:50%;
+     margin-left:20px;
+     float:left;
+     font-size:small;
+   }
+   .btn--3{
+     width:50%;
+     float:left;
+     margin-left:20px;
+     font-size:small;
+   }
+  
+   
+ }
+ 

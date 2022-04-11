@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="public">
+    <title>encriptador</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  </head>
+  <style>
+      body{
+    background-image: url('../img/flo.jpg');
+ 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    padding: 15px;
+   /* margin: 0 15px 0 10px;*/
+   margin:15px 15px 20px 10px;
+    box-shadow: 2px 10px 10px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(201, 194, 194);
+    border-radius: 0.5em;
+    width: 40%;
+    height: auto;
+    opacity:0.9;
+    
+  }
+  
+  .btn {
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background-color:rgb(92, 89, 89);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 0.5em;
+  }
+    .btn:hover {
+      background-color: #bebcbc;
+    }
+  
+  
+  .text-input {
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+    height: 50px;
+  }
+  footer{
+    
+    color:#141212;
+    
+  }
+  footer p{
+    font-size:26px;
+  }
+  </style>
+  </head>
+  <body>  
+
+
+<section class="form box">  
+      <form action="">
+        <label for="input-texto">Ingrese solo minúsculas, sin acento</label>
+        <input onkeypress="return/[a-z]/i.test(event.key)" class="text-input" type="text" name="input-texto"  id="input-texto" placeholder="Ingrese el texto aqui">
+        <input class="btn" type="submit" value="encriptar" id="btn-encriptar" >
+        <input class="btn" type="submit" value="desencriptar" id="btn-desencriptar" >
+        <input class="btn" type="submit" value="limpiar"  id="clean" onclick="limpiar()">
+      </form>
+      
+    </section>
+  
+    <section class="msg box">
+      <h3 id="">Mensaje encriptado:</h3>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" type="submit" value="copiar" id="btn-copy" onclick="copiarTexto()">
+    </section>
+  <body>  
+    <script type="text/javascript" src="script.js"></script>
+
+    <footer>
+       <p>Desarrollado por Mireya Peña</p>
+       <p>Alura Challenge  Oracle Next Education</p>
+       <p>2022</p>
+      </footer>
+      
+      
+   
+</html> 
